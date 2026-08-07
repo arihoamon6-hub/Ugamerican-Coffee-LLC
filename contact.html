@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ugamerican Coffee Co.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="icon" href="logo.jpeg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="brand">
+            <span class="logo-chip">
+                <img src="logo.jpeg" alt="Ugamerican Coffee LLC — rooted in Uganda, inspired by America">
+            </span>
+            <span class="brand-text">Ugamerican<em>Coffee</em></span>
+        </a>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">Our Route</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+        <a href="shop.html" class="nav-cta">Shop beans <i class="fa-solid fa-arrow-right"></i></a>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <p class="eyebrow">We answer these ourselves</p>
+    <h1>Get in touch</h1>
+    <p>Questions about an order, a wholesale account, or a specific lot —
+    send it over and we'll get back to you within two business days.</p>
+</section>
+
+<div class="contact-wrap">
+    <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Sent';">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+        </div>
+        <div>
+            <label for="reason">Reason</label>
+            <select id="reason">
+                <option>Order question</option>
+                <option>Wholesale / café account</option>
+                <option>Press or partnership</option>
+                <option>Something else</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+    </form>
+
+    <div class="contact-info">
+        <h3>Wholesale &amp; cafés</h3>
+        <p>We supply green and roasted beans to cafés and roasters across
+        the U.S. on a standing weekly route. Ask for our current lot sheet
+        and pricing.</p>
+
+        <div class="row"><i class="fa-solid fa-envelope"></i><span>ugamericancoffee@gmail.com</span></div>
+        <div class="row"><i class="fa-solid fa-phone"></i><span>+1 (857) 249-6840</span></div>
+        <div class="row"><i class="fa-solid fa-location-dot"></i><span>Roasted and shipped from the United States</span></div>
+
+        <h3>Follow the route</h3>
+        <div class="socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="foot-grid">
+        <div>
+            <span class="logo-chip"><img src="logo.jpeg" alt="Ugamerican Coffee LLC logo"></span>
+            <span class="brand-text">Ugamerican<em>Coffee</em></span>
+            <p>Uganda grown. Roasted in America.</p>
+        </div>
+        <div>
+            <h4>Shop</h4>
+            <a href="shop.html">All coffee</a>
+            <a href="contact.html">Wholesale</a>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <a href="about.html">Our route</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>Follow</h4>
+            <div class="socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="copy">© 2026 Ugamerican Coffee LLC. Roasted and shipped in the United States.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

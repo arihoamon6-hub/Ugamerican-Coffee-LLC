@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Ugamerican Coffee Co.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="icon" href="logo.jpeg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="brand">
+            <span class="logo-chip">
+                <img src="logo.jpeg" alt="Ugamerican Coffee LLC — rooted in Uganda, inspired by America">
+            </span>
+            <span class="brand-text">Ugamerican<em>Coffee</em></span>
+        </a>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="about.html">Our Route</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+        <a href="contact.html" class="nav-cta">Wholesale <i class="fa-solid fa-arrow-right"></i></a>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <p class="eyebrow">Six lots, two species, one country</p>
+    <h1>All beans, current harvest</h1>
+    <p>Every lot is roasted to order in the U.S. within two weeks of shipping.
+    Prices shown are for a 12oz bag; wholesale sizing is available on request.</p>
+</section>
+
+<div class="shop-filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="arabica">Arabica</button>
+    <button data-filter="robusta">Robusta</button>
+    <button data-filter="blend">Blends</button>
+</div>
+
+<div class="shop-grid" id="shop-grid">
+
+    <article class="product-card" data-species="arabica">
+        <div class="bag" data-tone="clay"><i class="fa-solid fa-mountain"></i></div>
+        <span class="tag">Arabica · Washed</span>
+        <h3>Rwenzori Sunrise</h3>
+        <p class="notes">Citrus, black tea, brown sugar. Rwenzori Mountains, medium-light roast.</p>
+        <div class="price-row"><span>$18 / 12oz</span><a href="contact.html" class="add">Order</a></div>
+    </article>
+
+    <article class="product-card" data-species="arabica">
+        <div class="bag" data-tone="ochre"><i class="fa-solid fa-water"></i></div>
+        <span class="tag">Arabica · Natural</span>
+        <h3>Elgon Reserve</h3>
+        <p class="notes">Red apple, molasses, walnut. Mount Elgon, medium roast.</p>
+        <div class="price-row"><span>$19 / 12oz</span><a href="contact.html" class="add">Order</a></div>
+    </article>
+
+    <article class="product-card" data-species="arabica">
+        <div class="bag" data-tone="leaf"><i class="fa-solid fa-star"></i></div>
+        <span class="tag">Arabica · Peaberry</span>
+        <h3>Kanungu Peaberry</h3>
+        <p class="notes">Blackberry, lemongrass, floral finish. Kanungu, southwest Uganda. Limited lot.</p>
+        <div class="price-row"><span>$22 / 12oz</span><a href="contact.html" class="add">Order</a></div>
+    </article>
+
+    <article class="product-card" data-species="robusta">
+        <div class="bag" data-tone="clay"><i class="fa-solid fa-seedling"></i></div>
+        <span class="tag">Robusta · Dark</span>
+        <h3>West Nile Robusta</h3>
+        <p class="notes">Cocoa, tobacco, roasted nut, heavy crema. Built for espresso.</p>
+        <div class="price-row"><span>$15 / 12oz</span><a href="contact.html" class="add">Order</a></div>
+    </article>
+
+    <article class="product-card" data-species="robusta">
+        <div class="bag" data-tone="ochre"><i class="fa-solid fa-tree"></i></div>
+        <span class="tag">Robusta · Medium-Dark</span>
+        <h3>Masaka Estate</h3>
+        <p class="notes">Dark chocolate, cedar, low acidity. Central Uganda's coffee belt.</p>
+        <div class="price-row"><span>$15 / 12oz</span><a href="contact.html" class="add">Order</a></div>
+    </article>
+
+    <article class="product-card" data-species="blend">
+        <div class="bag" data-tone="leaf"><i class="fa-solid fa-mug-saucer"></i></div>
+        <span class="tag">Blend · Medium</span>
+        <h3>Ugamerican House</h3>
+        <p class="notes">Caramel, toasted grain, easy every day. Arabica and Robusta blend.</p>
+        <div class="price-row"><span>$16 / 12oz</span><a href="contact.html" class="add">Order</a></div>
+    </article>
+
+</div>
+
+<footer>
+    <div class="foot-grid">
+        <div>
+            <span class="logo-chip"><img src="logo.jpeg" alt="Ugamerican Coffee LLC logo"></span>
+            <span class="brand-text">Ugamerican<em>Coffee</em></span>
+            <p>Uganda grown. Roasted in America.</p>
+        </div>
+        <div>
+            <h4>Shop</h4>
+            <a href="shop.html">All coffee</a>
+            <a href="contact.html">Wholesale</a>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <a href="about.html">Our route</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>Follow</h4>
+            <div class="socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="copy">© 2026 Ugamerican Coffee LLC. Roasted and shipped in the United States.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
